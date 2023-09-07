@@ -1,12 +1,9 @@
 package stepdefinition;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import static org.junit.Assert.assertTrue;
 
 public class UserRegistrationStepDefinitions {
@@ -15,7 +12,7 @@ public class UserRegistrationStepDefinitions {
 
     @Given("user is on the user registration page")
     public void userIsOnUserRegistrationPage() {
-        System.setProperty("webdriver.chrome.driver", "path_to_chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
         driver = new ChromeDriver();
 
         // Replace the URL with the actual registration page URL
